@@ -1,0 +1,5 @@
+2025-06-11 14:02:46 [[31merror[39m]: Validation error in addUser: "phone_number" with value "+998-90-123-45-67" fails to match the required pattern: /^\d{2}-\d{3}-\d{2}-\d{2}$/
+2025-06-11 14:03:44 [[31merror[39m]: Validation error in addUser: "password" is not allowed
+2025-06-11 14:04:12 [[31merror[39m]: Validation error in addUser: "password" must be a string
+2025-06-11 15:18:27 [[31merror[39m]: Validation error in addAdmin: "activation_link" is not allowed
+2025-06-11 15:33:25 [[31merror[39m]: Validation error in addAdmin: "password" is not allowed

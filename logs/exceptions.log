@@ -1,0 +1,220 @@
+2025-06-12 16:43:00 [[31merror[39m]: Error: Cannot find module '../models'
+Require stack:
+- C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js
+- C:\FullStack N21\Exam\trainingService\routes\payment.routes.js
+- C:\FullStack N21\Exam\trainingService\routes\index.routes.js
+- C:\FullStack N21\Exam\trainingService\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js:8:5)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-06-12 16:43:00 [[31merror[39m]: Error: Cannot find module '../models'
+Require stack:
+- C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js
+- C:\FullStack N21\Exam\trainingService\routes\payment.routes.js
+- C:\FullStack N21\Exam\trainingService\routes\index.routes.js
+- C:\FullStack N21\Exam\trainingService\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js:8:5)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-06-12 16:43:37 [[31merror[39m]: Error: Cannot find module '../models'
+Require stack:
+- C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js
+- C:\FullStack N21\Exam\trainingService\routes\payment.routes.js
+- C:\FullStack N21\Exam\trainingService\routes\index.routes.js
+- C:\FullStack N21\Exam\trainingService\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js:8:5)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-06-12 16:43:37 [[31merror[39m]: Error: Cannot find module '../models'
+Require stack:
+- C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js
+- C:\FullStack N21\Exam\trainingService\routes\payment.routes.js
+- C:\FullStack N21\Exam\trainingService\routes\index.routes.js
+- C:\FullStack N21\Exam\trainingService\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js:8:5)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-06-12 16:43:40 [[31merror[39m]: Error: Cannot find module '../models'
+Require stack:
+- C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js
+- C:\FullStack N21\Exam\trainingService\routes\payment.routes.js
+- C:\FullStack N21\Exam\trainingService\routes\index.routes.js
+- C:\FullStack N21\Exam\trainingService\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js:8:5)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-06-12 16:43:40 [[31merror[39m]: Error: Cannot find module '../models'
+Require stack:
+- C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js
+- C:\FullStack N21\Exam\trainingService\routes\payment.routes.js
+- C:\FullStack N21\Exam\trainingService\routes\index.routes.js
+- C:\FullStack N21\Exam\trainingService\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js:8:5)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-06-12 16:44:23 [[31merror[39m]: Error: Cannot find module '../models'
+Require stack:
+- C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js
+- C:\FullStack N21\Exam\trainingService\routes\payment.routes.js
+- C:\FullStack N21\Exam\trainingService\routes\index.routes.js
+- C:\FullStack N21\Exam\trainingService\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js:8:5)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-06-12 16:44:23 [[31merror[39m]: Error: Cannot find module '../models'
+Require stack:
+- C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js
+- C:\FullStack N21\Exam\trainingService\routes\payment.routes.js
+- C:\FullStack N21\Exam\trainingService\routes\index.routes.js
+- C:\FullStack N21\Exam\trainingService\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js:8:5)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-06-12 16:44:33 [[31merror[39m]: Error: Cannot find module '../models'
+Require stack:
+- C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js
+- C:\FullStack N21\Exam\trainingService\routes\payment.routes.js
+- C:\FullStack N21\Exam\trainingService\routes\index.routes.js
+- C:\FullStack N21\Exam\trainingService\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js:8:5)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-06-12 16:44:33 [[31merror[39m]: Error: Cannot find module '../models'
+Require stack:
+- C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js
+- C:\FullStack N21\Exam\trainingService\routes\payment.routes.js
+- C:\FullStack N21\Exam\trainingService\routes\index.routes.js
+- C:\FullStack N21\Exam\trainingService\app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js:8:5)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+2025-06-12 16:50:09 [[31merror[39m]: C:\FullStack N21\Exam\trainingService\validation\user.validation.js:9
+  activation_link: Joi.string(),
+  ^^^^^^^^^^^^^^^
+
+SyntaxError: Unexpected identifier 'activation_link'
+    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
+    at Module._compile (node:internal/modules/cjs/loader:1528:20)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\controllers\user.controller.js:9:24)
+2025-06-12 16:50:09 [[31merror[39m]: C:\FullStack N21\Exam\trainingService\validation\user.validation.js:9
+  activation_link: Joi.string(),
+  ^^^^^^^^^^^^^^^
+
+SyntaxError: Unexpected identifier 'activation_link'
+    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
+    at Module._compile (node:internal/modules/cjs/loader:1528:20)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\controllers\user.controller.js:9:24)
+2025-06-12 16:50:20 [[31merror[39m]: C:\FullStack N21\Exam\trainingService\validation\user.validation.js:9
+  activation_link: Joi.string(),
+  ^^^^^^^^^^^^^^^
+
+SyntaxError: Unexpected identifier 'activation_link'
+    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
+    at Module._compile (node:internal/modules/cjs/loader:1528:20)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\controllers\user.controller.js:9:24)
+2025-06-12 16:50:20 [[31merror[39m]: C:\FullStack N21\Exam\trainingService\validation\user.validation.js:9
+  activation_link: Joi.string(),
+  ^^^^^^^^^^^^^^^
+
+SyntaxError: Unexpected identifier 'activation_link'
+    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
+    at Module._compile (node:internal/modules/cjs/loader:1528:20)
+    at Object..js (node:internal/modules/cjs/loader:1706:10)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Module.require (node:internal/modules/cjs/loader:1311:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\controllers\user.controller.js:9:24)
