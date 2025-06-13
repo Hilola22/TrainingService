@@ -157,13 +157,13 @@ const registerAdmin = async (req, res) => {
       hashed_password: hashedPassword,
       full_name,
       phone_number,
-      activation_link,
       is_active: false,
+      activation_link
     });
 
     const activationUrl = `${config.get(
       "api_url"
-    )}/api/user/activate/${activation_link}`;
+    )}/api/admins/activate/${activation_link}`;
     await mailService.sendMail(email, activationUrl);
 
     const payload = {
@@ -185,7 +185,6 @@ const registerAdmin = async (req, res) => {
       email: newAdmin.email,
       full_name: newAdmin.full_name,
       phone_number: newAdmin.phone_number,
-      activation_link: newAdmin.activation_link,
       is_active: newAdmin.is_active,
     };
 
@@ -203,7 +202,7 @@ const registerAdmin = async (req, res) => {
 const adminActivate = async (req, res) => {
   try {
     const { link } = req.params;
-    const admin = await Admin.findOne({ activation_link: link });
+    const admin = await Admin.findOne({ where: { activation_link: link } });
 
     if (!admin) {
       return sendErrorResponse({ message: "Admin link incorrect" }, res, 400);
@@ -235,7 +234,7 @@ const addAdmin = async (req, res) => {
       logger.error(`Validation error in addAdmin: ${error.details[0].message}`);
       return sendErrorResponse({ message: error.details[0].message }, res, 400);
     }
-    const { email, password, full_name, phone_number, secretKey } = req.body;
+    const { email, password, full_name, phone_number } = req.body;
 
     const existingAdmin = await Admin.findOne({ where: { email } });
     if (existingAdmin) {

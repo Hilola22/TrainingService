@@ -33,6 +33,7 @@ const Admin = sequelize.define(
     hashed_token: {
       type: DataTypes.STRING(2000),
     },
+    activation_link: DataTypes.STRING,
     is_active: {
       type: DataTypes.BOOLEAN,
       defaultValue: false,

@@ -24,6 +24,6 @@ router.get("/activate/:link", adminActivate);
 router.get("/", adminJwtGuard, findAll);
 router.get("/:id", adminJwtGuard, findOne);
 router.patch("/:id", adminJwtGuard, adminSelfGuard, update);
-router.delete("/:id", adminJwtGuard, adminSelfGuard, remove);
+router.delete("/:id", adminJwtGuard, remove);
 
 module.exports = router;

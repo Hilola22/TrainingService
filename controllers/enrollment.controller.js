@@ -9,13 +9,24 @@ const createEnrollment = async (req, res) => {
   try {
     const { adminId, userId, trainingId, enrollment_date, status } = req.body;
 
-    const newEnrollment = await Enrollments.create({
-      adminId,
-      userId,
-      trainingId,
-      enrollment_date,
-      status,
-    },{fields: ['adminId', 'userId', 'trainingId', 'enrollment_date', 'status']});
+    const newEnrollment = await Enrollments.create(
+      {
+        adminId,
+        userId,
+        trainingId,
+        enrollment_date,
+        status,
+      },
+      {
+        fields: [
+          "adminId",
+          "userId",
+          "trainingId",
+          "enrollment_date",
+          "status",
+        ],
+      }
+    );
 
     const cleanEnrollment = await Enrollments.findByPk(newEnrollment.id, {
       attributes: [
@@ -91,7 +102,7 @@ const findOne = async (req, res) => {
   try {
     const { id } = req.params;
     const enrollment = await Enrollments.findByPk(id);
-    if (enrollment) {
+    if (!enrollment) {
       return res.status(404).send({ message: "Enrollment not found" });
     }
     res.status(200).send({ data: enrollment });
@@ -122,7 +133,14 @@ const update = async (req, res) => {
     );
 
     const updatedEnrollment = await Enrollments.findByPk(id, {
-      attributes: ["id", "userId", "trainingId", "adminId", "enrollment_date", "status"],
+      attributes: [
+        "id",
+        "userId",
+        "trainingId",
+        "adminId",
+        "enrollment_date",
+        "status",
+      ],
       include: [
         {
           model: User,

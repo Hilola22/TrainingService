@@ -195,8 +195,6 @@ const getTopSpeakersByTraining = async (req, res) => {
       group: [
         "trainings.speakerId",
         "speaker.id",
-        "speaker.full_name",
-        "speaker.email",
       ],
       order: [[sequelize.literal("trainings_count"), "DESC"]],
       raw: true,

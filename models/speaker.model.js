@@ -33,6 +33,7 @@ const Speaker = sequelize.define(
     hashed_password: {
       type: DataTypes.STRING(200),
     },
+    activation_link: DataTypes.STRING,
     is_active: {
       type: DataTypes.BOOLEAN,
       defaultValue: false,

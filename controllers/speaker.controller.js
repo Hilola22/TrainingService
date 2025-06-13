@@ -233,7 +233,7 @@ const register = async (req, res) => {
 
     const activationUrl = `${config.get(
       "api_url"
-    )}/api/speaker/activate/${activation_link}`;
+    )}/api/speakers/activate/${activation_link}`;
     await mailService.sendMail(email, activationUrl);
 
     const payload = {

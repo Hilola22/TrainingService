@@ -227,7 +227,7 @@ const register = async (req, res) => {
 
     const activationUrl = `${config.get(
       "api_url"
-    )}/api/user/activate/${activation_link}`;
+    )}/api/users/activate/${activation_link}`;
     await mailService.sendMail(email, activationUrl);
 
     const payload = {

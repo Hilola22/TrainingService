@@ -403,105 +403,9 @@ SyntaxError: Unexpected token ')'
     at Module.require (node:internal/modules/cjs/loader:1311:12)
     at require (node:internal/modules/helpers:136:16)
     at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\routes\admin.routes.js:14:24)
-2025-06-13 11:09:41 [[31merror[39m]: C:\FullStack N21\Exam\trainingService\controllers\attendance.controller.js:40
-          model: ,
-                 ^
-
-SyntaxError: Unexpected token ','
-    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
-    at Module._compile (node:internal/modules/cjs/loader:1528:20)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.require (node:internal/modules/cjs/loader:1311:12)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\routes\attendance.routes.js:8:5)
-2025-06-13 11:13:41 [[31merror[39m]: ReferenceError: A is not defined
-    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\models\attendance.model.js:24:1)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.require (node:internal/modules/cjs/loader:1311:12)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\controllers\attendance.controller.js:2:21)
-2025-06-13 11:13:55 [[31merror[39m]: ReferenceError: AdmiAten is not defined
-    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\models\attendance.model.js:26:20)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.require (node:internal/modules/cjs/loader:1311:12)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\controllers\attendance.controller.js:2:21)
-2025-06-13 11:13:59 [[31merror[39m]: ReferenceError: Atn is not defined
-    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\models\attendance.model.js:26:20)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.require (node:internal/modules/cjs/loader:1311:12)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\controllers\attendance.controller.js:2:21)
-2025-06-13 11:21:11 [[31merror[39m]: C:\FullStack N21\Exam\trainingService\models\reviews.model.js:24
-Reviews.belongsTo())
-                   ^
-
-SyntaxError: Unexpected token ')'
-    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
-    at Module._compile (node:internal/modules/cjs/loader:1528:20)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.require (node:internal/modules/cjs/loader:1311:12)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\controllers\reviews.controller.js:2:17)
-2025-06-13 11:21:13 [[31merror[39m]: Error: reviews.belongsTo called with something that's not a subclass of Sequelize.Model
-    at reviews.<anonymous> (C:\FullStack N21\Exam\trainingService\node_modules\sequelize\lib\associations\mixin.js:63:13)
-    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\models\reviews.model.js:24:9)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.require (node:internal/modules/cjs/loader:1311:12)
-    at require (node:internal/modules/helpers:136:16)
-2025-06-13 11:29:46 [[31merror[39m]: ReferenceError: ad is not defined
-    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\routes\user.routes.js:24:17)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.require (node:internal/modules/cjs/loader:1311:12)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\routes\index.routes.js:2:20)
-2025-06-13 11:29:49 [[31merror[39m]: ReferenceError: adm is not defined
-    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\routes\user.routes.js:24:17)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.require (node:internal/modules/cjs/loader:1311:12)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\routes\index.routes.js:2:20)
-2025-06-13 11:31:34 [[31merror[39m]: C:\FullStack N21\Exam\trainingService\routes\reviews.routes.js:16
-router.delete("/:id", user remove);
-                      ^^^^
+2025-06-13 11:09:41 [[31merror[39m]: C:\FullStack N21\Exam\trainingService\controllers\attendance.controller.js:402025-06-13 15:22:02 [[31merror[39m]: C:\FullStack N21\Exam\trainingService\controllers\admin.controller.js:205
+    const admin = await Admin.findOne({ activation_link: link } });
+                                                              ^
 
 SyntaxError: missing ) after argument list
     at wrapSafe (node:internal/modules/cjs/loader:1486:18)
@@ -513,10 +417,10 @@ SyntaxError: missing ) after argument list
     at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
     at Module.require (node:internal/modules/cjs/loader:1311:12)
     at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\routes\index.routes.js:9:23)
-2025-06-13 11:51:33 [[31merror[39m]: C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js:125
-            {
-            ^
+    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\routes\admin.routes.js:12:5)
+2025-06-13 15:29:36 [[31merror[39m]: C:\FullStack N21\Exam\trainingService\models\admin.model.js:43
+  {
+  ^
 
 SyntaxError: Unexpected token '{'
     at wrapSafe (node:internal/modules/cjs/loader:1486:18)
@@ -528,101 +432,4 @@ SyntaxError: Unexpected token '{'
     at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
     at Module.require (node:internal/modules/cjs/loader:1311:12)
     at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\routes\payment.routes.js:9:5)
-2025-06-13 11:53:56 [[31merror[39m]: ReferenceError: pay is not defined
-    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\models\payment.model.js:23:17)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.require (node:internal/modules/cjs/loader:1311:12)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js:3:18)
-2025-06-13 11:54:03 [[31merror[39m]: ReferenceError: e is not defined
-    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\models\payment.model.js:23:1)
-    at Module._compile (node:internal/modules/cjs/loader:1554:14)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.require (node:internal/modules/cjs/loader:1311:12)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js:3:18)
-2025-06-13 11:56:23 [[31merror[39m]: C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js:124
-        where: { userId },
-             ^
-
-SyntaxError: Unexpected token ':'
-    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
-    at Module._compile (node:internal/modules/cjs/loader:1528:20)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.require (node:internal/modules/cjs/loader:1311:12)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\routes\payment.routes.js:9:5)
-2025-06-13 11:58:52 [[31merror[39m]: C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js:160
-
-
-
-SyntaxError: Unexpected end of input
-    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
-    at Module._compile (node:internal/modules/cjs/loader:1528:20)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.require (node:internal/modules/cjs/loader:1311:12)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\routes\payment.routes.js:9:5)
-2025-06-13 11:58:55 [[31merror[39m]: C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js:160
-
-
-
-SyntaxError: Unexpected end of input
-    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
-    at Module._compile (node:internal/modules/cjs/loader:1528:20)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.require (node:internal/modules/cjs/loader:1311:12)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\routes\payment.routes.js:9:5)
-2025-06-13 11:58:58 [[31merror[39m]: C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js:160
-
-
-
-SyntaxError: Unexpected end of input
-    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
-    at Module._compile (node:internal/modules/cjs/loader:1528:20)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.require (node:internal/modules/cjs/loader:1311:12)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\routes\payment.routes.js:9:5)
-2025-06-13 11:59:04 [[31merror[39m]: C:\FullStack N21\Exam\trainingService\controllers\payment.controller.js:116
-  const getClientPayment = async (req, res) => {
-        ^
-
-SyntaxError: Identifier 'getClientPayment' has already been declared
-    at wrapSafe (node:internal/modules/cjs/loader:1486:18)
-    at Module._compile (node:internal/modules/cjs/loader:1528:20)
-    at Object..js (node:internal/modules/cjs/loader:1706:10)
-    at Module.load (node:internal/modules/cjs/loader:1289:32)
-    at Function._load (node:internal/modules/cjs/loader:1108:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
-    at Module.require (node:internal/modules/cjs/loader:1311:12)
-    at require (node:internal/modules/helpers:136:16)
-    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\routes\payment.routes.js:9:5)
+    at Object.<anonymous> (C:\FullStack N21\Exam\trainingService\controllers\admin.controller.js:2:15)
