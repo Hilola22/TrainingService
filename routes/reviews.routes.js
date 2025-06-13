@@ -13,6 +13,6 @@ router.post("/", addReview);
 router.get("/", findAll);
 router.get("/:id", findOne);
 router.patch("/:id", userJwtGuard, userSelfGuard, update);
-router.delete("/:id", remove);
+router.delete("/:id", userJwtGuard, remove);
 
 module.exports = router;

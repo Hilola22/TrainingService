@@ -30,6 +30,9 @@ const Admin = sequelize.define(
     hashed_password: {
       type: DataTypes.STRING(200),
     },
+    hashed_token: {
+      type: DataTypes.STRING(2000),
+    },
     is_active: {
       type: DataTypes.BOOLEAN,
       defaultValue: false,

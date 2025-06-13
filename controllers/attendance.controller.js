@@ -1,9 +1,9 @@
 const { sendErrorResponse } = require("../helpers/send.error.response");
 const Attendances = require("../models/attendance.model");
-const User = require("../models/user.model");
-const Training = require("../models/training.model");
 const logger = require("../services/logger.service");
 const { attendanceSchema } = require("../validation/attendance.validation");
+const Enrollment = require("../models/enrollment.model");
+const Admin = require("../models/admin.model");
 
 const createAttendance = async (req, res) => {
   try {
@@ -14,13 +14,13 @@ const createAttendance = async (req, res) => {
       );
       return sendErrorResponse({ message: error.details[0].message }, res, 400);
     }
-    const { is_completed, userId, trainingId, attendance_url } = req.body;
+    const { enrollmentId, adminId, total_participants_count, participant_status } = req.body;
 
     const newAttendance = await Attendances.create({
-      is_completed,
-      userId,
-      trainingId,
-      attendance_url,
+      enrollmentId,
+      adminId,
+      total_participants_count,
+      participant_status
     });
 
     res
@@ -36,18 +36,16 @@ const findAll = async (req, res) => {
     const attendances = await Attendances.findAll({
       include: [
         {
-          model: User,
+          model: Admin,
           attributes: ["id", "full_name", "email", "phone_number"],
         },
         {
-          model: Training,
+          model: Enrollment,
           attributes: [
             "id",
-            "title",
-            "start_date",
-            "end_date",
-            "total_price",
-            "status",
+            "userId",
+            "enrollment_date",
+            "trainingId"
           ],
         },
       ],
@@ -66,19 +64,12 @@ const findOne = async (req, res) => {
     const attendance = await Attendances.findByPk(id, {
       include: [
         {
-          model: User,
+          model: Admin,
           attributes: ["id", "full_name", "email", "phone_number"],
         },
         {
-          model: Training,
-          attributes: [
-            "id",
-            "title",
-            "start_date",
-            "end_date",
-            "total_price",
-            "status",
-          ],
+          model: Enrollment,
+          attributes: ["id", "userId", "enrollment_date", "trainingId"],
         },
       ],
     });
@@ -95,19 +86,29 @@ const findOne = async (req, res) => {
 const update = async (req, res) => {
   try {
     const { id } = req.params;
-    const { is_completed, userId, trainingId, attendance_url } = req.body;
+    const {
+      enrollmentId,
+      adminId,
+      total_participants_count,
+      participant_status,
+    } = req.body;
     const attendance = await Attendances.findByPk(id);
     if (!attendance) {
       return res.status(404).send({ message: "Attendance not found" });
     }
-    await attendance.update({
-      is_completed,
-      userId,
-      trainingId,
-      attendance_url,
-    });
+    await attendance.update(
+      {
+        enrollmentId,
+        adminId,
+        total_participants_count,
+        participant_status,
+      },
+      {
+        where: { id },
+      }
+    );
     const updatedAttendance = await Attendances.findByPk(id, {
-      include: [{ model: User }, { model: Training }],
+      include: [{ model: Admin }, { model: Enrollment }],
     });
     return res.status(200).send({
       message: "Attendance updated successfully",

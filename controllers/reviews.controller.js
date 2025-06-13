@@ -79,16 +79,19 @@ const update = async (req, res) => {
     if (!review) {
       return res.status(404).send({ message: "Review not found" });
     }
-    await review.update({
-      userId,
-      trainingId,
-      rating,
-      comment,
-    });
+    await review.update(
+      {
+        userId,
+        trainingId,
+        rating,
+        comment,
+      },
+      {
+        where: { id },
+      }
+    );
 
-    const updatedReview = await Reviews.findByPk(id, {
-      include: ["User", "Training"],
-    });
+    const updatedReview = await Reviews.findByPk(id);
 
     res.status(200).send({
       message: "Review updated successfully",

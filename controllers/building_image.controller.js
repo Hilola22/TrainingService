@@ -12,11 +12,11 @@ const addBuildingImage = async (req, res) => {
       );
       return sendErrorResponse({ message: error.details[0].message }, res, 400);
     }
-    const { image_url, buildingsId } = req.body;
+    const { image_url, buildingId } = req.body;
 
     const newBuildingImage = await BuildingImages.create({
       image_url,
-      buildingsId,
+      buildingId,
     });
     res
       .status(201)
@@ -53,12 +53,17 @@ const findOne = async (req, res) => {
 const update = async (req, res) => {
   try {
     const { id } = req.params;
-    const { image_url, buildingsId } = req.body;
+    const { image_url, buildingId } = req.body;
     const building_image = await BuildingImages.findByPk(id);
     if (!building_image) {
       return res.status(404).send({ message: "Building image not found" });
     }
-    await building_image.update({ image_url, buildingsId });
+    await building_image.update(
+      { image_url, buildingId },
+      {
+        where: { id },
+      }
+    );
 
     const updatedBuildingImage = await BuildingImages.findByPk(id);
 

@@ -34,7 +34,7 @@ const login = async (req, res) => {
 
     const tokens = adminJwtService.generateTokens(payload);
 
-    await admin.update({ refresh_token: tokens.refreshToken });
+    await admin.update({ hashed_token: tokens.refreshToken });
 
     res.cookie("refreshToken", tokens.refreshToken, {
       httpOnly: true,
@@ -64,16 +64,16 @@ const logoutAdmin = async (req, res) => {
     }
 
     const admin = await Admin.findOne({
-      where: { refresh_token: refreshToken },
+      where: { hashed_token: refreshToken },
     });
 
     if (admin) {
-      admin.refresh_token = "";
+      admin.hashed_token = null;
       await admin.save();
     }
 
     res.clearCookie("refreshToken");
-    res.send({ admin });
+    res.send({ message: "Admin logged out successfully" });
   } catch (error) {
     sendErrorResponse(error, res, 400);
   }
@@ -93,7 +93,7 @@ const refreshAdmin = async (req, res) => {
     await adminJwtService.verifyRefreshToken(refreshToken);
 
     const admin = await Admin.findOne({
-      where: { refresh_token: refreshToken },
+      where: { hashed_token: refreshToken },
     });
     if (!admin) {
       return sendErrorResponse(
@@ -109,7 +109,7 @@ const refreshAdmin = async (req, res) => {
     };
 
     const tokens = adminJwtService.generateTokens(payload);
-    admin.refresh_token = tokens.refreshToken;
+    admin.hashed_token = tokens.refreshToken;
     await admin.save();
 
     res.cookie("refreshToken", tokens.refreshToken, {
@@ -173,7 +173,7 @@ const registerAdmin = async (req, res) => {
     };
 
     const tokens = adminJwtService.generateTokens(payload);
-    await newAdmin.update({ refresh_token: tokens.refreshToken });
+    await newAdmin.update({ hashed_token: tokens.refreshToken });
 
     res.cookie("refreshToken", tokens.refreshToken, {
       httpOnly: true,

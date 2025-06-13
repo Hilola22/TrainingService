@@ -20,10 +20,10 @@ const Attendance = sequelize.define(
   }
 );
 
-Attendance.hasMany(Enrollment)
-Enrollment.belongsTo(Attendance)
+Enrollment.hasMany(Attendance)
+Attendance.belongsTo(Enrollment)
 
-Attendance.hasMany(Admin)
-Admin.belongsTo(Attendance)
+Admin.hasMany(Attendance)
+Attendance.belongsTo(Admin)
 
 module.exports = Attendance;

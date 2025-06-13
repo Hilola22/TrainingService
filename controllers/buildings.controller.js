@@ -36,8 +36,8 @@ const findAll = async (req, res) => {
 const findOne = async (req, res) => {
   try {
     const { id } = req.params;
-    const building = await Buildings.findByPk({ id });
-    if (building) {
+    const building = await Buildings.findByPk(id);
+    if (!building) {
       return res.status(404).send({ message: "Building not found" });
     }
     res.status(200).send({ data: building });
@@ -57,18 +57,23 @@ const update = async (req, res) => {
       location,
       description,
     } = req.body;
-    const building = await Buildings.findByPk({ id });
+    const building = await Buildings.findByPk(id);
     if (!building) {
       return res.status(404).send({ message: "Building not found" });
     }
-    await Buildings.update({
-      building_name,
-      floor,
-      room,
-      price_per_hour,
-      location,
-      description,
-    });
+    await Buildings.update(
+      {
+        building_name,
+        floor,
+        room,
+        price_per_hour,
+        location,
+        description,
+      },
+      {
+        where: { id },
+      }
+    );
 
     const updatedBuilding = await Buildings.findByPk(id);
 

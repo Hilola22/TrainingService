@@ -20,10 +20,10 @@ const Reviews = sequelize.define(
   }
 );
 
-Reviews.hasMany(User)
-User.belongsTo(Reviews)
+User.hasMany(Reviews)
+Reviews.belongsTo(User)
 
-Reviews.hasMany(Training)
-Training.belongsTo(Reviews)
+Training.hasMany(Reviews)
+Reviews.belongsTo(Training)
 
 module.exports = Reviews;

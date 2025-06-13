@@ -20,7 +20,7 @@ const Payment = sequelize.define(
   }
 );
 
-Payment.hasMany(Enrollment, { foreignKey: "enrollmentId" });
-Enrollment.belongsTo(Payment);
+Enrollment.hasMany(Payment);
+Payment.belongsTo(Enrollment);
 
 module.exports = Payment;

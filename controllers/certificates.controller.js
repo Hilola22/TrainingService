@@ -3,9 +3,7 @@ const Certificates = require("../models/certiificates.model");
 const Training = require("../models/training.model");
 const User = require("../models/user.model");
 const logger = require("../services/logger.service");
-const {
-  certificatesSchema,
-} = require("../validation/certiificates.validation");
+const { certificatesSchema } = require("../validation/certiificates.validation");
 
 const createCertificate = async (req, res) => {
   try {
@@ -17,7 +15,7 @@ const createCertificate = async (req, res) => {
       return sendErrorResponse({ message: error.details[0].message }, res, 400);
     }
     const { is_completed, userId, trainingId, certificate_url } = req.body;
-    if (is_completed) {
+    if (!is_completed) {
       return res
         .status(400)
         .send({ message: "You haven't finished the training yet." });
@@ -88,12 +86,17 @@ const update = async (req, res) => {
     if (!certificate) {
       return res.status(404).send({ message: "Certificate not found" });
     }
-    await certificate.update({
-      is_completed,
-      userId,
-      trainingId,
-      certificate_url,
-    });
+    await certificate.update(
+      {
+        is_completed,
+        userId,
+        trainingId,
+        certificate_url,
+      },
+      {
+        where: { id },
+      }
+    );
 
     const updatedCertificate = await Certificates.findByPk(id, {
       include: ["User", "Training"],

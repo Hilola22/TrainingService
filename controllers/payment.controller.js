@@ -69,12 +69,17 @@ const update = async (req, res) => {
     if (!payment) {
       return res.status(404).send({ message: "Payment not found" });
     }
-    await payment.update({
-      enrollmentId,
-      payment_date,
-      payment_method,
-      payment_status,
-    });
+    await payment.update(
+      {
+        enrollmentId,
+        payment_date,
+        payment_method,
+        payment_status,
+      },
+      {
+        where: { id },
+      }
+    );
 
     const updatedPayment = await Payments.findByPk(id);
 
@@ -109,7 +114,7 @@ const remove = async (req, res) => {
 //========Aqlli so'rov===============
 const getClientPayment = async (req, res) => {
   try {
-    const { userId } = req.params;
+    const { userId } = req.body;
 
     const payments = await Payments.findAll({
       include: [

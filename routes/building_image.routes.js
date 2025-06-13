@@ -12,7 +12,7 @@ const adminSelfGuard = require("../middlewares/guards/admin-self.guard");
 router.post("/", adminJwtGuard, addBuildingImage);
 router.get("/", findAll);
 router.get("/:id", findOne);
-router.patch("/:id", adminJwtGuard, adminSelfGuard, update);
-router.delete("/:id", adminJwtGuard, adminSelfGuard, remove);
+router.patch("/:id", adminJwtGuard, update);
+router.delete("/:id", adminJwtGuard, remove);
 
 module.exports = router;

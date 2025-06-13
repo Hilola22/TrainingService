@@ -65,6 +65,7 @@ const logoutUser = async (req, res) => {
       );
     }
     const user = await User.findOne({ where: { hashed_token: refreshToken } });
+    
     if (!user) {
       return sendErrorResponse({ message: "User not found" }, res, 404);
     }

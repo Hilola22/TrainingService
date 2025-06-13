@@ -15,11 +15,39 @@ const createEnrollment = async (req, res) => {
       trainingId,
       enrollment_date,
       status,
+    },{fields: ['adminId', 'userId', 'trainingId', 'enrollment_date', 'status']});
+
+    const cleanEnrollment = await Enrollments.findByPk(newEnrollment.id, {
+      attributes: [
+        "id",
+        "adminId",
+        "userId",
+        "trainingId",
+        "enrollment_date",
+        "status",
+        "createdAt",
+        "updatedAt",
+      ],
+      include: [
+        {
+          model: User,
+          attributes: ["id", "full_name", "email"],
+        },
+        {
+          model: Training,
+          attributes: ["id", "title"],
+        },
+        {
+          model: Admin,
+          attributes: ["id", "full_name"],
+        },
+      ],
     });
 
-    res
-      .status(201)
-      .send({ message: "New enrollment created", data: newEnrollment });
+    res.status(201).send({
+      message: "New enrollment created",
+      data: cleanEnrollment,
+    });
   } catch (error) {
     sendErrorResponse(error, res, 400);
   }
@@ -80,15 +108,21 @@ const update = async (req, res) => {
     if (!enrollment) {
       return res.status(404).send({ message: "Training not found" });
     }
-    await enrollment.update({
-      adminId,
-      userId,
-      trainingId,
-      enrollment_date,
-      status,
-    });
+    await enrollment.update(
+      {
+        adminId,
+        userId,
+        trainingId,
+        enrollment_date,
+        status,
+      },
+      {
+        where: { id },
+      }
+    );
 
     const updatedEnrollment = await Enrollments.findByPk(id, {
+      attributes: ["id", "userId", "trainingId", "adminId", "enrollment_date", "status"],
       include: [
         {
           model: User,
@@ -96,12 +130,12 @@ const update = async (req, res) => {
         },
         {
           model: Training,
-          attributes: ["id", "title", "start_date", "end_date"]
+          attributes: ["id", "title", "start_date", "end_date"],
         },
         {
           model: Admin,
-          attributes: ["id", "full_name"]
-        }
+          attributes: ["id", "full_name"],
+        },
       ],
     });
 
@@ -164,6 +198,7 @@ const StatusCancelled = async (req, res) => {
     const { start_date, end_date } = req.body;
 
     const cancelledUsers = await Enrollments.findAll({
+      attributes: ["enrollment_date", "status", "updatedAt", "createdAt"],
       where: {
         status: "cancelled",
         createdAt: {

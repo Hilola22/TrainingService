@@ -104,16 +104,21 @@ const updateTraining = async (req, res) => {
       return sendErrorResponse({ message: "Training not found" }, res, 404);
     }
 
-    await training.update({
-      title,
-      start_date,
-      end_date,
-      duration,
-      format,
-      total_price,
-      specialization,
-      status,
-    });
+    await training.update(
+      {
+        title,
+        start_date,
+        end_date,
+        duration,
+        format,
+        total_price,
+        specialization,
+        status,
+      },
+      {
+        where: { id },
+      }
+    );
 
     const updatedTraining = await Training.findByPk(id, {
       include: ["speaker"],
